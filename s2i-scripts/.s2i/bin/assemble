@@ -16,8 +16,10 @@ cp -Rf /tmp/src/*.html ./
 cp -Rf /tmp/src/*.html ./
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
 Date=$(date "+%Y-%m-%d")
-Date1=($date "+%Y-%m-%d")
-echo "Try #1 :$Date1" >> ./info.html
+Date1=$(date "+%Y-%m-%d")
+Date2=$(date "+%Y-%m-%d")
+echo "Try #1 :$Date1" >> ./info.htmla
+echo "try #2 :$Date2" >> ./info.html
 echo "---> Creating info page"
 echo "Page Build WITH Feedback Date : $Date" >> ./info.html
 echo "$Date" >> ./info.html
