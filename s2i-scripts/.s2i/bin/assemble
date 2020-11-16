@@ -18,8 +18,12 @@ DATE=`date "+%b %d, %Y @ %H:%M %p"`
 Date=$(date "+%Y-%m-%d")
 Date1=$(date "+%Y-%m-%d")
 Date2=$(date "+%Y-%m-%d")
-echo "Try #1 :$Date1" >> ./info.htmla
-echo "try #2 :$Date2" >> ./info.html
+Date3=$(date "+%Y-%m-%d")
+echo "$Date3 " >> ./info.html
+
+echo "Added $Date3 " >> ./info.html
+echo "Try #1 :$Date1" >> ./info.html
+echo "try #3 :$Date2" >> ./info.html
 echo "---> Creating info page"
 echo "Page Build WITH Feedback Date : $Date" >> ./info.html
 echo "$Date" >> ./info.html
