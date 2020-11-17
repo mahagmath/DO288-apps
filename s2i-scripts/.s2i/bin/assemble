@@ -13,12 +13,12 @@ config_s2i
 echo "---> Installing application source"
 #cp -Rf /tmp/src/*.html ./
 cp -Rf /tmp/src/*.html ./
+cp -Rf /tmp/src/*.html ./
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
-Date=$(date "+%Y-%m-%d")
-echo "$Date" >> ./info.html
-echo "Given Text here : $Date" >> ./info.html
+Date2=$(date "+%Y-%m-%d")
+echo "Date created: $Date2" >> ./info.html
+echo "Yet another try $Date2" >> ./info.html
 echo "---> Creating info page"
-echo "Page Build WITH Feedback Date : $Date" >> ./info.html
 echo "Page built on $DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
